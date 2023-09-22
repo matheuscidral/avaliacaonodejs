@@ -61,6 +61,18 @@ class controllerCalculadora {
       res.status(500).json({ message: "Probleminha" });
     }
   }
+
+  Raiz(req, res) {
+    try {
+      const result = servico.Potencia(req.body.num);
+      res.status(200).json({
+        message: `resultado: ${result}`,
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: "Probleminha" });
+    }
+  }
 }
 
 module.exports = controllerCalculadora;

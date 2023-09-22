@@ -15,5 +15,6 @@ router.post("/api/avaliacao/Subtrair", controller.Subtrair);
 router.post("/api/avaliacao/Multiplicar", controller.Multiplicar);
 router.post("/api/avaliacao/Dividir", controller.Dividir);
 router.post("/api/avaliacao/Potencia", controller.Potencia);
+router.post("/api/avaliacao/Raiz", controller.Raiz);
 
 module.exports = router;

@@ -48,6 +48,16 @@ class Calculadora {
 
     return resultado;
   }
+
+  Raiz(num) {
+    console.log("Entrou na Funcao");
+    if (isNaN(num)) {
+      throw new Error("Favor informar número");
+    }
+    const resultado = Math.sqrt(num);
+
+    return resultado;
+  }
 }
 
 module.exports = Calculadora;

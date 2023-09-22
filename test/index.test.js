@@ -223,4 +223,16 @@ describe("Testes da calculadora", () => {
     console.log("Error");
     expect(result).toThrowError("Favor informar números");
   });
+
+  //Raiz
+  it("Should sum one number", () => {
+    const result = servico.Raiz(4);
+    expect(result).toBe(2);
+  });
+
+  it("Should error", () => {
+    const result = () => servico.Potencia("a");
+    console.log("Error");
+    expect(result).toThrowError("Favor informar números");
+  });
 });
